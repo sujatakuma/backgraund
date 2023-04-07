@@ -39,28 +39,81 @@
             font-size: 20px;
             letter-spacing: normal;
         }
-        *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-/*}body{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    min-height: 100vh;
-    background-color: rgb(168, 173, 177);
-    /*background: linear-gradient(to right, red, yellow);*/
-}/*header{
-    font: 'raleway', sans-serif;
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        @media screen and (max-width:1020px) {
+            body {
+                width: 800px;
+                /*font: 'raleway', sans-serif;
             color: rgba(0, 0, 0, .5, );
             text-align: center;
             text-transform: uppercase;
-            letter-spacing: .5em;
-            top: 15%;
-           
-        }*/
+            letter-spacing: .3em;
+            top: 15%;*/
+                background: linear-gradient(to right, rgb(88, 6, 219), yellow);
 
 
+
+            }
+
+            h1 {
+                font: 580 4.2em 'raleway', sans-serif;
+                letter-spacing: .4em;
+                text-align: center;
+font-size: 4rem;
+
+            }
+        }
+
+        @media screen and (max-width:980px) {
+            body {
+                background: linear-gradient(to right, rgb(88, 6, 219), rgb(0, 255, 179));
+                width: 450px;
+            }
+
+            h1 {
+                font: 380 3.2em 'raleway', sans-serif;
+                letter-spacing: .1em;
+                text-align: center;
+
+            }
+        }
+
+        @media screen and (max-width:670px) {
+            body {
+                background: linear-gradient(to right, rgba(88, 6, 219, 0.048), rgb(0, 255, 179));
+
+                width: 300px;
+            }
+
+            h1 {
+                font: 300 3.2em 'raleway', sans-serif;
+                letter-spacing: 0.1em;
+                text-align: center;
+                
+
+            }
+        } @media screen and (max-width:480px) {
+            body {
+                background: linear-gradient(to right, rgba(88, 6, 219, 0.048), rgb(0, 255, 179));
+
+                width: 200px;
+            }
+
+            h1 {
+                font: 300 3.2em 'raleway', sans-serif;
+                letter-spacing: 0.1em;
+                text-align: center;
+                
+
+            }
+
+        }
     </style>
 </head>
 
@@ -71,9 +124,9 @@
 
     <input oninput="setGradient()" class="color1" type="color" name="color1" value="#00ff00">
     <input oninput="setGradient()" class="color2" type="color" name="color2" value="#ff0000">
-<h3></h3>
-    
-    
+    <h3></h3>
+
+
 
     <script>
         /*color1.addEventListener("input", setGradient);
@@ -90,8 +143,8 @@
                 + color2.value
                 + ")";
             css.innerHTML = body.style.background + ";";
-        } 
-        
+        }
+
 
     </script>
 
